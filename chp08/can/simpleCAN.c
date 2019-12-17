@@ -30,6 +30,8 @@ int main(void) {
 	if(bind(s, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
 		perror("Error in socket bind");
 		return -2;
+		
+		
 	}
 	frame.can_id  = 0x123;
 	frame.can_dlc = 3;
